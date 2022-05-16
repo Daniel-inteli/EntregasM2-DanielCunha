@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.Titulo {
+    color: rgb(202, 194, 216);
+    font-size: 100px;
+    text-align: center;
+}
+
+.Titulo2 {
+    color: rgb(202, 194, 216);
+    font-size: 40px;
+    text-align: left;
+    margin: 20px;
+}
+
+.Titulo3 {
+    color: rgb(202, 194, 216);
+    font-size: 25px;
+    text-align: left;
+    margin: 20px;
+
+}
+
+.imagem {
+    border-radius: 100%;
+    border: 5px solid rgb(131, 85, 218);
+    width: 300px;
+    height: 300px;
+    display: block;
+    margin-left: auto;
+
+}
+.imagem2 {
+    width: 25px;
+    height: 25px;
+}
+
+
+body {
+    background-image: url(a3c29b03fd490f5b1c60172edba44795.jpg);
+    background-size: contain;
+    /* background-image: linear-gradient(to bottom right, rgb(110, 119, 185), rgb(49, 44, 100)); */
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.qualificacoes {
+    color: rgb(202, 194, 216);
+    font-size: 25px;
+    text-align: left;
+    margin: 20px;
+}
+
+.linkedin {
+
+    color: rgb(202, 194, 216);
+
+
+}
+
+.D-flex {
+    display: flex;
+    width: 100%;
+
+}
+
+.Display-titulo {
+    width: 70%;
+
+}
+
+.Display-imagem {
+
+    width: 30%;
+}
