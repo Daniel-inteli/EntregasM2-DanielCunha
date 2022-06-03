@@ -33,7 +33,9 @@ h1{
 #get{
     color: #a34f74;
 }
-
+#getDB{
+    color: #5b4696; 
+}
 
 button {
 	padding: 3;
@@ -54,4 +56,7 @@ button {
 }
 .button-get{
     background-color: #a34f74;
+}
+.button-get-db{
+    background-color: #5b4696;
 }
