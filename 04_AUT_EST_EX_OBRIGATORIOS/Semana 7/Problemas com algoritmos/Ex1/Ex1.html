@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio1</title>
+</head>
+<body>
+    <h1>Quantidade do produto</h1>
+    <input type="number" id="quantidade"> 
+    <button onclick="menos()"><</button>
+    <button onclick="mais()">></button>
+    <script>
+        function menos(){
+            var quantidade = parseInt(document.getElementById("quantidade").value);
+            document.getElementById("quantidade").innerHTML =  quantidade -1;
+            console.log(quantidade)
+        }
+        function mais(){
+            var quantidade = document.getElementById("quantidade").value;
+            document.getElementById("quantidade").innerHTML = quantidade + 1;
+
+        }
+    </script>
+</body>
+</html>
