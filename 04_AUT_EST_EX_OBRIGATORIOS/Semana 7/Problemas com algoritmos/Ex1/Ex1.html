@@ -13,13 +13,14 @@
     <button onclick="mais()">></button>
     <script>
         function menos(){
-            var quantidade = parseInt(document.getElementById("quantidade").value);
-            document.getElementById("quantidade").innerHTML =  quantidade -1;
-            console.log(quantidade)
+            var quantidade =document.getElementById("quantidade").value;
+            var numInt = Number(quantidade);
+            document.getElementById("quantidade").value = numInt -1
         }
         function mais(){
             var quantidade = document.getElementById("quantidade").value;
-            document.getElementById("quantidade").innerHTML = quantidade + 1;
+            let numint = Number(quantidade);
+            document.getElementById("quantidade").value = numint + 1
 
         }
     </script>
