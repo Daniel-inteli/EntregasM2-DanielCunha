@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício4</title>
+</head>
+
+<body>
+    <h1>Quantidade de pessoas</h1>
+    <input type="number" id="quantidade">
+    <h1>Período</h1>
+    <select name="Período" id="periodo">
+        <option value="diurno">diurno</option>
+        <option value="noturno">noturno</option>
+    </select>
+    <h1></h1>
+    <input type="text" id="resultado">
+    <button onclick="total()">Calcular</button>
+    <script>
+        function total() {
+            var quantidade = document.getElementById("quantidade").value;
+            var periodo = document.getElementById("periodo").value;
+            var quant = Number(quantidade);
+            var total = 0
+            if (periodo == "diurno") {
+                if (quant > 50) {
+                    total = quant * 120
+                    document.getElementById("resultado").value = total;
+                }
+                else {
+                    total = quant * 200;
+                    document.getElementById("resultado").value = total;
+                }
+            }
+
+            else if (periodo == "noturno") {
+                if (quant > 50) {
+                    total = quant * 80;
+                    document.getElementById("resultado").value = total;
+                }
+                else {
+                    total = quant * 100;
+                    document.getElementById("resultado").value = total;
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
