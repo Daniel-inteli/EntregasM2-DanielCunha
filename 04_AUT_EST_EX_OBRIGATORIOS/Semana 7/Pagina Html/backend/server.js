@@ -41,6 +41,15 @@ app.put("/atualizar", (req,res) => {
     res.status(200).send()
 
 })
+app.get("/delete", (req,res) =>{
+    async function getDelete() {
+        const db = await sqlite.open({ filename: "./bancodeDados.db", driver: sqlite3.Database })
+        const result = await db.get(`DELETE FROM userInfo WHERE id = 2`)
+    }
+    getDelete()
+    res.status(200).send()
+
+})
 app.listen(port, () => {
     console.log("o seu servidor está rodando http://localhost:3055")
 })
